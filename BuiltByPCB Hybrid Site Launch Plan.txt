@@ -1,0 +1,92 @@
+# BuiltByPCB.com Hybrid Site Launch Plan
+
+## ✅ Main Website
+**Platform:** Astro + Netlify CMS  
+**Hosting:** Netlify (Free Tier)  
+**CMS:** GitHub + Markdown + Visual Editor
+
+### Pages:
+- `/` Home
+- `/about` About + Bio + Resume
+- `/services` Consulting services (Cloud, Cybersecurity, Training)
+- `/portfolio` Projects + Case Studies
+- `/blog` Tutorials + Guides (Dev.to-style)
+- `/contact` Form + Email link
+- `/privacy` and `/accessibility`
+
+### Stack:
+- Astro SSG
+- TailwindCSS (optional for styling)
+- GitHub for version control
+- Netlify CMS for editing
+- Route 53 DNS
+- Google Fonts + Accessible palette
+
+## 🧪 AWS Project Hosting
+**Subdomains:**
+- `api.builtbypcb.com` → FastAPI apps, private APIs
+- `labs.builtbypcb.com` → Dashboards, analytics, labs
+- `demo.builtbypcb.com` → Public sandboxed demos
+
+**Auth:** Password-based for `api` and `labs`, public access for `demo`
+
+**Initial Project:** Terraform Automation Lab (hosted under `labs.builtbypcb.com`)
+
+### Hosting Plan:
+- Use EC2 or App Runner for Terraform backend
+- NGINX reverse proxy with basic auth for password protection
+- Store secrets in AWS SSM Parameter Store
+- CI/CD from GitHub (later)
+
+## 🛠️ Next Steps:
+1. Scaffold Astro + Netlify CMS starter repo
+2. Configure Netlify and hook to GitHub
+3. Setup Route 53 records to point `builtbypcb.com` to Netlify
+4. Build Terraform lab structure and host under `labs.builtbypcb.com`
+5. Add basic auth + monitoring (CloudWatch)
+6. Create CI/CD plan using GitHub Actions
+
+## 📬 Email Setup
+- Configure `contact@builtbypcb.com` via AWS SES or Zoho
+- Add SPF/DKIM/DMARC to Route 53 DNS
+
+## 🧩 Optional Enhancements
+- Add Framer Motion for transitions
+- Integrate Calendly/Typeform in contact page
+- Add dark mode toggle
+- Use analytics (Plausible or GA4)
+- Add PDF resume download
+
+---
+
+> **You are now set to build a secure, scalable, and modern consulting presence.**
+File Directory
+builtbypcbee-site/
+├── public/
+├── src/
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── about.astro
+│   │   ├── services.astro
+│   │   ├── contact.astro
+│   │   ├── privacy.astro
+│   │   └── accessibility.astro
+│   ├── components/
+│   ├── layouts/
+│   └── content/
+│       ├── blog/
+│       │   └── example-post.md
+│       └── portfolio/
+│           └── example-project.md
+├── styles/
+├── netlify/
+│   └── cms/
+│       └── config.yml
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── .gitignore
+├── astro.config.mjs
+├── netlify.toml
+├── package.json
+└── README.md
