@@ -1,0 +1,10 @@
+---
+import BlogCard from "../components/BlogCard.astro";
+import blogPosts from "../content/blog/*.md";
+---
+<h1 class="text-3xl font-bold mb-6">Blog</h1>
+<div class="grid gap-4">
+  {blogPosts.map(post => (
+    <BlogCard title={post.frontmatter.title} date={post.frontmatter.date} href={`/blog/${post.slug}/`} />
+  ))}
+</div>
