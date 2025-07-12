@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,ts,tsx,md}"],
+  presets: [require("tailwindcss/defaultConfig")], // 👈 Enables full utility set
   theme: {
     extend: {
       fontFamily: {
@@ -8,8 +9,8 @@ export default {
       },
       colors: {
         pcb: {
-          DEFAULT: '#0f172a', // Dark navy
-          accent: '#22d3ee',  // Cyan accent
+          DEFAULT: '#0f172a',
+          accent: '#22d3ee',
         },
       },
     },
