@@ -1,0 +1,59 @@
+---
+const studies = [
+  {
+    title: "Incident Response Leadership in Mission-Critical Aviation System",
+    situation:
+      "Operating within a global aviation surveillance environment supporting federal and international stakeholders.",
+    challenge:
+      "Inconsistent incident workflows led to delays, unclear escalation paths, and weak documentation.",
+    action:
+      "Standardized incident response procedures, coordinated cross-functional teams, and improved escalation and reporting practices.",
+    result:
+      "Improved response consistency, faster resolution, and stronger audit traceability.",
+  },
+  {
+    title: "Cloud Security Framework & Risk Reduction",
+    situation:
+      "Identified common cloud security gaps including IAM misconfiguration and lack of centralized logging.",
+    challenge:
+      "Limited visibility into user actions and weak control enforcement.",
+    action:
+      "Designed IAM structure, enabled logging, and established baseline monitoring workflows aligned to best practices.",
+    result:
+      "Improved visibility, reduced risk exposure, and strengthened audit posture.",
+  },
+  {
+    title: "Vulnerability Management & Risk Governance",
+    situation:
+      "Vulnerabilities identified but lacked prioritization and ownership.",
+    challenge:
+      "Remediation tracking inconsistent and risk not clearly communicated.",
+    action:
+      "Established prioritization logic, coordinated remediation, and validated fixes.",
+    result:
+      "Improved accountability, reduced exposure, and stronger security posture.",
+  },
+];
+---
+
+<main class="min-h-screen bg-slate-950 text-slate-100 px-6 py-20">
+  <div class="mx-auto max-w-5xl">
+    <h1 class="text-4xl font-bold mb-6">Case Studies</h1>
+    <p class="text-slate-300 mb-12">
+      Selected examples of security operations, incident response, and system resilience work in mission-critical environments.
+    </p>
+
+    <div class="space-y-10">
+      {studies.map((study) => (
+        <div class="border border-slate-800 rounded-2xl p-6 bg-slate-900">
+          <h2 class="text-2xl font-semibold text-cyan-300">{study.title}</h2>
+
+          <p class="mt-4"><strong>Situation:</strong> {study.situation}</p>
+          <p class="mt-2"><strong>Challenge:</strong> {study.challenge}</p>
+          <p class="mt-2"><strong>Action:</strong> {study.action}</p>
+          <p class="mt-2"><strong>Result:</strong> {study.result}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</main>
