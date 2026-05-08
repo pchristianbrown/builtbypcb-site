@@ -35,6 +35,7 @@ const studies = [
   },
 ];
 ---
+
 <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
   <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
     <a href="/" class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300">
@@ -50,24 +51,49 @@ const studies = [
   </nav>
 </header>
 
-<main class="min-h-screen bg-slate-950 text-slate-100 px-6 py-20">
-  <div class="mx-auto max-w-5xl">
-    <h1 class="text-4xl font-bold mb-6">Case Studies</h1>
-    <p class="text-slate-300 mb-12">
-      Selected examples of security operations, incident response, and system resilience work in mission-critical environments.
+<main class="min-h-screen bg-slate-950 px-6 py-20 text-slate-100">
+  <section class="mx-auto max-w-5xl">
+    <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+      Case Studies
     </p>
 
-    <div class="space-y-10">
+    <h1 class="text-4xl font-bold tracking-tight md:text-5xl">
+      Security operations proof, not just claims.
+    </h1>
+
+    <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+      Selected examples of incident response, continuous monitoring, cloud security,
+      and risk governance work in mission-critical environments.
+    </p>
+
+    <div class="mt-12 space-y-8">
       {studies.map((study) => (
-        <div class="border border-slate-800 rounded-2xl p-6 bg-slate-900">
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-xl">
           <h2 class="text-2xl font-semibold text-cyan-300">{study.title}</h2>
 
-          <p class="mt-4"><strong>Situation:</strong> {study.situation}</p>
-          <p class="mt-2"><strong>Challenge:</strong> {study.challenge}</p>
-          <p class="mt-2"><strong>Action:</strong> {study.action}</p>
-          <p class="mt-2"><strong>Result:</strong> {study.result}</p>
-        </div>
+          <div class="mt-6 space-y-4 text-slate-300">
+            <p><strong class="text-slate-100">Situation:</strong> {study.situation}</p>
+            <p><strong class="text-slate-100">Challenge:</strong> {study.challenge}</p>
+            <p><strong class="text-slate-100">Action:</strong> {study.action}</p>
+            <p><strong class="text-slate-100">Result:</strong> {study.result}</p>
+          </div>
+        </article>
       ))}
     </div>
-  </div>
+
+    <div class="mt-12 rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+      <h2 class="text-2xl font-bold">Want the short version?</h2>
+      <p class="mt-4 text-slate-300">
+        These case studies map directly to PCB’s resume: incident response leadership,
+        NIST/RMF-aligned operations, vulnerability governance, and security documentation.
+      </p>
+
+      <a
+        href="/resume"
+        class="mt-6 inline-block rounded-xl bg-cyan-300 px-5 py-3 font-semibold text-slate-950 hover:bg-cyan-200"
+      >
+        View Resume
+      </a>
+    </div>
+  </section>
 </main>
