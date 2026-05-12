@@ -1,0 +1,126 @@
+---
+const projects = [
+  {
+    title: "IPERFORMA",
+    status: "In Progress",
+    lane: "Security Operations / Analytics",
+    description:
+      "A local analytics tool for parsing and visualizing iperf performance logs, designed to turn raw network test output into operational insight.",
+    value:
+      "Demonstrates NOC tooling, performance analysis, data visualization, and operational reporting.",
+  },
+  {
+    title: "BuiltByPCB Website v2",
+    status: "Live",
+    lane: "Portfolio / CI-CD",
+    description:
+      "A modular Astro and Tailwind portfolio deployed through GitHub and Netlify, built to support resume segmentation, case studies, and recruiter conversion.",
+    value:
+      "Demonstrates front-end deployment, CI/CD workflow, Git discipline, and career infrastructure.",
+  },
+  {
+    title: "AWS Security Monitoring Lab",
+    status: "Planned",
+    lane: "Cloud Security / ISSO",
+    description:
+      "Planned AWS security lab focused on IAM, logging, monitoring, CloudTrail, least privilege, and evidence-ready control documentation.",
+    value:
+      "Will demonstrate cloud governance, security visibility, shared responsibility, and control validation.",
+  },
+];
+---
+
+<header id="top" class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="/" class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300">
+      BuiltByPCB
+    </a>
+
+    <div class="flex items-center gap-4 text-sm font-semibold">
+      <a href="/" class="text-slate-300 transition hover:text-cyan-300">Home</a>
+      <a href="/case-studies" class="text-slate-300 transition hover:text-cyan-300">Case Studies</a>
+      <a href="/resume" class="text-slate-300 transition hover:text-cyan-300">Resume</a>
+      <a href="/projects" class="text-cyan-300">Projects</a>
+      <a href="/#contact" class="text-slate-300 transition hover:text-cyan-300">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top" class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
+  <section class="mx-auto max-w-5xl">
+    <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+      Projects
+    </p>
+
+    <h1 class="max-w-4xl text-4xl font-bold tracking-tight md:text-5xl">
+      Practical builds that connect operations, security, and cloud execution.
+    </h1>
+
+    <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+      Selected projects and technical artifacts that demonstrate PCB’s progression
+      from mission-critical operations into security, cloud governance, and automation.
+    </p>
+  </section>
+
+  <section class="mx-auto mt-10 max-w-5xl">
+    <div class="grid gap-6">
+      {projects.map((project) => (
+        <article class="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-xl">
+          <div class="flex flex-wrap items-center justify-between gap-3">
+            <h2 class="text-2xl font-semibold text-cyan-300">{project.title}</h2>
+            <span class="rounded-full border border-cyan-300 px-3 py-1 text-sm font-semibold text-cyan-300">
+              {project.status}
+            </span>
+          </div>
+
+          <p class="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            {project.lane}
+          </p>
+
+          <p class="mt-4 text-slate-300">{project.description}</p>
+
+          <div class="mt-5 rounded-xl border border-slate-800 bg-slate-950 p-4">
+            <p class="text-sm font-semibold text-slate-100">Why it matters</p>
+            <p class="mt-2 text-slate-300">{project.value}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="mx-auto mt-10 max-w-5xl">
+    <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+      <h2 class="text-2xl font-bold">Project roadmap</h2>
+      <p class="mt-4 text-slate-300">
+        The project section will expand as each artifact matures. Current priority is to
+        document operational security work first, then add cloud and automation builds as
+        supporting evidence.
+      </p>
+
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a
+          href="/case-studies"
+          class="inline-block rounded-xl bg-cyan-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-200"
+        >
+          View Case Studies
+        </a>
+
+        <a
+          href="/resume/security-operations"
+          class="inline-block rounded-xl border border-cyan-300 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+        >
+          View Security Ops Track
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-auto mt-12 max-w-6xl px-6 pb-4 text-center">
+    <a
+      href="#top"
+      class="inline-block rounded-xl border border-cyan-300 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+    >
+      Back to Top ↑
+    </a>
+  </div>
+</main>
