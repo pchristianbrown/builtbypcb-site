@@ -1,0 +1,19 @@
+---
+const { active = "" } = Astro.props;
+---
+
+<header id="top" class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="/" class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300">
+      BuiltByPCB
+    </a>
+
+    <div class="flex items-center gap-4 text-sm font-semibold">
+      <a href="/" class={active === "home" ? "text-cyan-300" : "text-slate-300 transition hover:text-cyan-300"}>Home</a>
+      <a href="/case-studies" class={active === "case-studies" ? "text-cyan-300" : "text-slate-300 transition hover:text-cyan-300"}>Case Studies</a>
+      <a href="/resume" class={active === "resume" ? "text-cyan-300" : "text-slate-300 transition hover:text-cyan-300"}>Resume</a>
+      <a href="/projects" class={active === "projects" ? "text-cyan-300" : "text-slate-300 transition hover:text-cyan-300"}>Projects</a>
+      <a href="/#contact" class="text-slate-300 transition hover:text-cyan-300">Contact</a>
+    </div>
+  </nav>
+</header>

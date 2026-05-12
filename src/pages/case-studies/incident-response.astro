@@ -1,21 +1,8 @@
 ---
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
 ---
-
-<header id="top" class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
-  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="/" class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300">
-      BuiltByPCB
-    </a>
-
-    <div class="flex items-center gap-4 text-sm font-semibold">
-      <a href="/" class="text-slate-300 hover:text-cyan-300">Home</a>
-      <a href="/case-studies" class="text-cyan-300">Case Studies</a>
-      <a href="/resume" class="text-slate-300 hover:text-cyan-300">Resume</a>
-      <a href="/projects" class="text-slate-300 transition hover:text-cyan-300">Projects</a>
-      <a href="/#contact" class="text-slate-300 hover:text-cyan-300">Contact</a>
-    </div>
-  </nav>
-</header>
+<Navbar active="incident-response" />
 
 <main class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
   <section class="mx-auto max-w-4xl">
@@ -161,3 +148,4 @@
     </a>
   </div>
 </main>
+<Footer />
