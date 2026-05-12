@@ -1,7 +1,6 @@
 ---
 
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const caseStudies = [
   {
@@ -21,8 +20,14 @@ const caseStudies = [
   },
 ];
 ---
+<BaseLayout
+  title="BuiltByPCB | CISSP Security & Cloud Operations"
+  description="BuiltByPCB is the professional portfolio of PCB, a CISSP-certified security and cloud operations professional."
+  active="home"
+>
 
-<Navbar active="index" />
+  <main id="top" class="bg-slate-950 text-slate-100">
+    <!-- existing page content except Navbar/Footer -->
 
 <main id="top" class="bg-slate-950 text-slate-100">
   <section class="mx-auto flex max-w-6xl flex-col justify-center px-6 py-16 md:py-24">
@@ -135,4 +140,4 @@ const caseStudies = [
     </a>
   </div>
 </main>
-<Footer />
+</BaseLayout>

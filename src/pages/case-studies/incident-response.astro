@@ -1,8 +1,7 @@
 ---
-import Navbar from "../../components/Navbar.astro";
-import Footer from "../../components/Footer.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
-<Navbar active="incident-response" />
+<BaseLayout
 
 <main class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
   <section class="mx-auto max-w-4xl">
@@ -144,8 +143,8 @@ import Footer from "../../components/Footer.astro";
       href="#top"
       class="inline-block rounded-xl border border-cyan-300 px-5 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
     >
-      Back to Top ↑
+      Back to Top
     </a>
   </div>
 </main>
-<Footer />
+</BaseLayout>
