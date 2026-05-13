@@ -1,0 +1,148 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTAButton from "../../components/CTAButton.astro";
+import InfoCard from "../../components/InfoCard.astro";
+---
+
+<BaseLayout
+  title="GRC / Risk Resume | BuiltByPCB"
+  description="GRC, risk, controls, and RMF-focused resume track for PCB."
+  active="resume"
+>
+  <main id="top" class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
+    <section class="mx-auto max-w-5xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+        GRC / Risk / Controls
+      </p>
+
+      <h1 class="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+        Translating operational security reality into risk, control, and governance outcomes.
+      </h1>
+
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+        CISSP-certified security professional with mission-critical operations experience,
+        focused on control evidence, incident documentation, remediation tracking,
+        continuous monitoring, and audit-ready security operations.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton href="/Paul_Christian_Brown_GS13_Resume.pdf" target="_blank" rel="noreferrer">
+          Download Resume
+        </CTAButton>
+
+        <CTAButton href="/case-studies/risk-governance" variant="secondary">
+          View Risk Case Study
+        </CTAButton>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="grid gap-6 md:grid-cols-2">
+        <InfoCard title="GRC Strengths">
+          <ul class="space-y-3">
+            <li>• NIST / RMF-aligned operational control thinking</li>
+            <li>• Evidence-quality incident and operational documentation</li>
+            <li>• Vulnerability remediation tracking and validation</li>
+            <li>• Audit traceability and control support</li>
+            <li>• Risk communication for technical and non-technical stakeholders</li>
+            <li>• SOP, runbook, and process documentation</li>
+          </ul>
+        </InfoCard>
+
+        <InfoCard title="Governance Profile">
+          <div class="space-y-4">
+            <p>
+              PCB’s GRC value comes from operational credibility: understanding how controls,
+              incidents, vulnerabilities, and documentation behave in real environments.
+            </p>
+
+            <p>
+              This lane is best suited for roles that need someone who can bridge technical
+              operations, evidence collection, remediation follow-up, and risk communication.
+            </p>
+
+            <p>
+              Strong fit areas include GRC analyst, risk analyst, security compliance,
+              ISSO support, controls assurance, and RMF-adjacent roles.
+            </p>
+          </div>
+        </InfoCard>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <InfoCard title="Representative Governance Experience">
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold text-cyan-300">
+              Control Evidence & Documentation
+            </h3>
+            <p class="mt-2">
+              Produced structured incident timelines, decision notes, escalation records,
+              and operational reports that support accountability, traceability, and review.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-cyan-300">
+              Continuous Monitoring Support
+            </h3>
+            <p class="mt-2">
+              Supported monitoring workflows, alert validation, incident escalation,
+              and documentation practices aligned with security and availability objectives.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-cyan-300">
+              Vulnerability & Remediation Governance
+            </h3>
+            <p class="mt-2">
+              Coordinated with technical teams to track remediation actions, validate
+              corrective work, and reduce repeat operational and security issues.
+            </p>
+          </div>
+        </div>
+      </InfoCard>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+        <h2 class="text-2xl font-bold">
+          Best-Fit Role Targets
+        </h2>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            GRC Analyst / Security Risk Analyst
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            Security Compliance Analyst
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            ISSO / RMF Support
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            Controls Assurance / Audit Readiness
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <CTAButton href="/resume/security-operations" variant="secondary">
+            Security Operations Track
+          </CTAButton>
+
+          <CTAButton href="/case-studies">
+            View Case Studies
+          </CTAButton>
+        </div>
+      </div>
+    </section>
+
+    <div class="mx-auto mt-12 max-w-6xl px-6 pb-4 text-center">
+      <CTAButton href="#top" variant="secondary">
+        Back to Top ↑
+      </CTAButton>
+    </div>
+  </main>
+</BaseLayout>
