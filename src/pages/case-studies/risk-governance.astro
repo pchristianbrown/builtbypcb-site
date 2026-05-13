@@ -1,0 +1,140 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTAButton from "../../components/CTAButton.astro";
+import InfoCard from "../../components/InfoCard.astro";
+---
+
+<BaseLayout
+  title="Risk Governance Case Study | BuiltByPCB"
+  description="Risk governance, control evidence, vulnerability remediation, and audit-ready documentation case study."
+  active="case-studies"
+>
+  <main id="top" class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
+    <section class="mx-auto max-w-4xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+        Risk Governance Case Study
+      </p>
+
+      <h1 class="text-4xl font-bold tracking-tight md:text-5xl">
+        Turning operational evidence into risk, control, and remediation visibility.
+      </h1>
+
+      <p class="mt-6 text-lg leading-8 text-slate-300">
+        Example of how operational documentation, incident evidence,
+        vulnerability tracking, and remediation coordination can support
+        governance, audit readiness, and security decision-making.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton href="/resume/grc-risk">
+          View GRC / Risk Resume Track
+        </CTAButton>
+
+        <CTAButton href="/case-studies" variant="secondary">
+          Back to Case Studies
+        </CTAButton>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-4xl space-y-8">
+      <InfoCard title="Operational Context">
+        <p>
+          In mission-critical environments, security governance does not live only
+          in policy documents. It depends on accurate operational records, clear
+          escalation paths, reliable incident timelines, and evidence that shows
+          how technical teams responded to risk.
+        </p>
+      </InfoCard>
+
+      <InfoCard title="Challenge">
+        <p>
+          Operational and security issues often create fragmented evidence:
+          tickets, alerts, escalation notes, remediation updates, vendor responses,
+          and after-action findings. Without disciplined structure, this evidence
+          becomes difficult to use for risk decisions, audits, compliance reviews,
+          and continuous improvement.
+        </p>
+      </InfoCard>
+
+      <InfoCard title="Actions Taken">
+        <div class="space-y-4">
+          <p>
+            Maintained structured documentation for incidents, escalations,
+            operational decisions, and corrective actions.
+          </p>
+
+          <p>
+            Coordinated with technical teams to track remediation progress,
+            validate closure, and reduce ambiguity around ownership.
+          </p>
+
+          <p>
+            Supported continuous monitoring workflows by ensuring alerts,
+            anomalies, and service-impacting events were documented with
+            enough clarity to support review and follow-up.
+          </p>
+
+          <p>
+            Helped convert recurring operational issues into SOP updates,
+            process improvements, and more consistent response expectations.
+          </p>
+        </div>
+      </InfoCard>
+
+      <InfoCard title="Outcome">
+        <p>
+          Improved documentation discipline, stronger audit traceability,
+          clearer remediation visibility, and better alignment between
+          operational reality and governance expectations.
+        </p>
+      </InfoCard>
+
+      <InfoCard title="Security & Governance Relevance">
+        <div class="space-y-4">
+          <p>
+            This work maps directly to GRC and RMF-adjacent responsibilities:
+            control evidence, continuous monitoring, issue tracking, incident
+            documentation, corrective action visibility, and stakeholder-ready
+            reporting.
+          </p>
+
+          <p>
+            It also demonstrates a practical bridge between operations and
+            governance: understanding how controls behave under real conditions,
+            not just how they are written.
+          </p>
+        </div>
+      </InfoCard>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-4xl">
+      <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+        <h2 class="text-2xl font-bold">Interview Talking Points</h2>
+
+        <ul class="mt-6 space-y-3 text-slate-300">
+          <li>• How operational evidence supports audit readiness</li>
+          <li>• How remediation tracking reduces repeat risk</li>
+          <li>• How incident documentation becomes governance evidence</li>
+          <li>• How technical risk is translated for non-technical stakeholders</li>
+          <li>• How continuous monitoring supports control effectiveness</li>
+        </ul>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <CTAButton href="/resume/grc-risk">
+            View GRC / Risk Track
+          </CTAButton>
+
+          <CTAButton href="/resume/security-operations" variant="secondary">
+            Security Operations Track
+          </CTAButton>
+        </div>
+      </div>
+    </section>
+
+    <div class="mx-auto mt-12 max-w-6xl px-6 pb-4 text-center">
+      <CTAButton href="#top" variant="secondary">
+        Back to Top ↑
+      </CTAButton>
+    </div>
+  </main>
+</BaseLayout>
