@@ -1,0 +1,139 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTAButton from "../../components/CTAButton.astro";
+import InfoCard from "../../components/InfoCard.astro";
+---
+
+<BaseLayout
+  title="Cloud Monitoring Case Study | BuiltByPCB"
+  description="Cloud monitoring, shared responsibility, logging, evidence readiness, and ISSO-aligned security operations case study."
+  active="case-studies"
+>
+  <main id="top" class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
+    <section class="mx-auto max-w-4xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+        Cloud Security / ISSO Case Study
+      </p>
+
+      <h1 class="text-4xl font-bold tracking-tight md:text-5xl">
+        Applying operational monitoring discipline to cloud security governance.
+      </h1>
+
+      <p class="mt-6 text-lg leading-8 text-slate-300">
+        A practical case study showing how incident response, continuous monitoring,
+        evidence quality, and operational controls translate into cloud security and
+        ISSO-aligned responsibilities.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton href="/resume/cloud-security">
+          View Cloud Security Track
+        </CTAButton>
+
+        <CTAButton href="/case-studies" variant="secondary">
+          Back to Case Studies
+        </CTAButton>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-4xl space-y-8">
+      <InfoCard title="Operational Context">
+        <p>
+          Cloud environments create shared responsibility boundaries where logging,
+          access control, monitoring, incident handling, and control evidence must be
+          clearly understood and maintained across teams.
+        </p>
+      </InfoCard>
+
+      <InfoCard title="Challenge">
+        <p>
+          Without structured monitoring, clear ownership, and evidence-ready documentation,
+          cloud systems can develop gaps in visibility, accountability, and authorization
+          support. These gaps become especially risky when teams rely on assumed provider
+          controls without validating customer-side responsibilities.
+        </p>
+      </InfoCard>
+
+      <InfoCard title="Actions Taken / Design Approach">
+        <div class="space-y-4">
+          <p>
+            Defined a cloud security monitoring approach centered on identity, logging,
+            alert visibility, configuration awareness, and incident escalation.
+          </p>
+
+          <p>
+            Mapped operational monitoring habits to cloud governance practices such as
+            least privilege, centralized logs, baseline configuration review, and
+            evidence collection.
+          </p>
+
+          <p>
+            Framed cloud monitoring outputs as governance artifacts: logs, alerts,
+            remediation records, configuration snapshots, and decision notes that can
+            support audits, authorization sustainment, or risk reviews.
+          </p>
+
+          <p>
+            Connected incident response practices to cloud response workflows, including
+            detection, triage, containment coordination, communication, recovery, and
+            after-action documentation.
+          </p>
+        </div>
+      </InfoCard>
+
+      <InfoCard title="Outcome">
+        <p>
+          Established a repeatable model for explaining cloud security through operational
+          controls: visibility, identity, documentation, response discipline, and
+          shared-responsibility awareness.
+        </p>
+      </InfoCard>
+
+      <InfoCard title="Security & ISSO Relevance">
+        <div class="space-y-4">
+          <p>
+            This case study supports ISSO and cloud security positioning by showing how
+            operational security experience can be applied to control monitoring, evidence
+            quality, risk communication, and cloud governance.
+          </p>
+
+          <p>
+            It also reinforces the transition path from security operations into cloud
+            security assurance: using monitoring, documentation, and incident response
+            maturity to support authorization and continuous monitoring.
+          </p>
+        </div>
+      </InfoCard>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-4xl">
+      <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+        <h2 class="text-2xl font-bold">Interview Talking Points</h2>
+
+        <ul class="mt-6 space-y-3 text-slate-300">
+          <li>• How shared responsibility affects cloud monitoring and evidence collection</li>
+          <li>• Why IAM, logging, and configuration baselines are core cloud controls</li>
+          <li>• How operational incident response maps to cloud security response</li>
+          <li>• How monitoring artifacts support audit readiness and ISSO workflows</li>
+          <li>• How CCSP study strengthens cloud governance and control language</li>
+        </ul>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <CTAButton href="/resume/cloud-security">
+            View Cloud Security Track
+          </CTAButton>
+
+          <CTAButton href="/resume/grc-risk" variant="secondary">
+            GRC / Risk Track
+          </CTAButton>
+        </div>
+      </div>
+    </section>
+
+    <div class="mx-auto mt-12 max-w-6xl px-6 pb-4 text-center">
+      <CTAButton href="#top" variant="secondary">
+        Back to Top ↑
+      </CTAButton>
+    </div>
+  </main>
+</BaseLayout>
