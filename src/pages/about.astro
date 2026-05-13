@@ -1,0 +1,155 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CTAButton from "../components/CTAButton.astro";
+import InfoCard from "../components/InfoCard.astro";
+---
+
+<BaseLayout
+  title="About PCB | BuiltByPCB"
+  description="About PCB, a CISSP-certified security and cloud operations professional transitioning from mission-critical operations into security leadership."
+  active="about"
+>
+  <main id="top" class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
+    <section class="mx-auto max-w-5xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+        About PCB
+      </p>
+
+      <h1 class="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+        From mission-critical operations to security leadership.
+      </h1>
+
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+        PCB is a CISSP-certified cybersecurity and operations professional with
+        12+ years supporting high-availability environments where uptime,
+        documentation, escalation discipline, and risk communication matter.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton href="/resume">
+          View Resume Tracks
+        </CTAButton>
+
+        <CTAButton href="/case-studies" variant="secondary">
+          View Case Studies
+        </CTAButton>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="grid gap-6 md:grid-cols-3">
+        <InfoCard title="Where I Started">
+          <p>
+            My foundation is in 24/7 network and systems operations supporting
+            mission-critical environments. That background shaped how I think:
+            stabilize first, document clearly, communicate impact, and prevent recurrence.
+          </p>
+        </InfoCard>
+
+        <InfoCard title="Where I Am Now">
+          <p>
+            With CISSP, Security+, and active Public Trust experience, I am focused
+            on roles that connect security operations, incident response, risk,
+            resilience, and governance.
+          </p>
+        </InfoCard>
+
+        <InfoCard title="Where I’m Going">
+          <p>
+            My long-term direction is cloud security and ISSO/ISSE-aligned work:
+            securing systems, validating controls, improving visibility, and helping
+            organizations make better risk decisions.
+          </p>
+        </InfoCard>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <InfoCard title="Professional Identity">
+        <div class="space-y-4">
+          <p>
+            I operate best where security, reliability, and operational pressure intersect.
+            My experience is not purely theoretical; it comes from environments where
+            incidents require coordination, communication, documentation, and follow-through.
+          </p>
+
+          <p>
+            BuiltByPCB exists to document that progression: from NOC and mission-critical
+            operations into incident response, GRC/risk, cloud governance, and security leadership.
+          </p>
+        </div>
+      </InfoCard>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+        <h2 class="text-2xl font-bold">Current Career Lanes</h2>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-3">
+          <a
+            href="/resume/security-operations"
+            class="rounded-2xl border border-cyan-300 p-5 text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+          >
+            <p class="text-xs font-semibold uppercase tracking-[0.2em]">Primary</p>
+            <h3 class="mt-3 font-semibold">Security Operations / IR</h3>
+            <p class="mt-2 text-sm">
+              Incident response, monitoring, escalation, and operational resilience.
+            </p>
+          </a>
+
+          <a
+            href="/resume/grc-risk"
+            class="rounded-2xl border border-cyan-300 p-5 text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+          >
+            <p class="text-xs font-semibold uppercase tracking-[0.2em]">Target</p>
+            <h3 class="mt-3 font-semibold">GRC / Risk</h3>
+            <p class="mt-2 text-sm">
+              Controls, evidence, remediation tracking, audit readiness, and risk communication.
+            </p>
+          </a>
+
+          <a
+            href="/resume/cloud-security"
+            class="rounded-2xl border border-cyan-300 p-5 text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+          >
+            <p class="text-xs font-semibold uppercase tracking-[0.2em]">Destination</p>
+            <h3 class="mt-3 font-semibold">Cloud Security / ISSO</h3>
+            <p class="mt-2 text-sm">
+              Shared responsibility, continuous monitoring, cloud governance, and ISSO support.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+        <h2 class="text-2xl font-bold">What BuiltByPCB Shows</h2>
+
+        <ul class="mt-6 space-y-3 text-slate-300">
+          <li>• Practical incident response and operational coordination experience</li>
+          <li>• Security documentation and audit-ready thinking</li>
+          <li>• Progression from operations into GRC, cloud security, and ISSO-aligned work</li>
+          <li>• Technical projects that demonstrate automation, analysis, and cloud/security growth</li>
+          <li>• A professional platform that can evolve into consulting and authority-building</li>
+        </ul>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <CTAButton href="/projects">
+            View Projects
+          </CTAButton>
+
+          <CTAButton href="/#contact" variant="secondary">
+            Contact PCB
+          </CTAButton>
+        </div>
+      </div>
+    </section>
+
+    <div class="mx-auto mt-12 max-w-6xl px-6 pb-4 text-center">
+      <CTAButton href="#top" variant="secondary">
+        Back to Top ↑
+      </CTAButton>
+    </div>
+  </main>
+</BaseLayout>
