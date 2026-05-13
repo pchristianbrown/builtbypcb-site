@@ -1,0 +1,152 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CTAButton from "../../components/CTAButton.astro";
+import InfoCard from "../../components/InfoCard.astro";
+---
+
+<BaseLayout
+  title="Cloud Security / ISSO Resume | BuiltByPCB"
+  description="Cloud security, ISSO, continuous monitoring, shared responsibility, and operational control resume track for PCB."
+  active="resume"
+>
+  <main id="top" class="bg-slate-950 px-6 py-12 text-slate-100 md:py-16">
+    <section class="mx-auto max-w-5xl">
+      <p class="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+        Cloud Security / ISSO
+      </p>
+
+      <h1 class="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+        Operational security experience applied to cloud governance, monitoring, and control assurance.
+      </h1>
+
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+        CISSP-certified security professional building toward cloud security and ISSO roles
+        by combining mission-critical operations, incident response, continuous monitoring,
+        documentation discipline, and cloud security governance principles.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-4">
+        <CTAButton href="/Paul_Christian_Brown_GS13_Resume.pdf" target="_blank" rel="noreferrer">
+          Download Resume
+        </CTAButton>
+
+        <CTAButton href="/case-studies/cloud-monitoring" variant="secondary">
+          View Cloud Case Study
+        </CTAButton>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="grid gap-6 md:grid-cols-2">
+        <InfoCard title="Cloud Security Strengths">
+          <ul class="space-y-3">
+            <li>• Shared responsibility and cloud risk governance</li>
+            <li>• Identity and least-privilege concepts</li>
+            <li>• Logging, monitoring, and evidence readiness</li>
+            <li>• Secure configuration and baseline validation</li>
+            <li>• Incident response and operational escalation</li>
+            <li>• NIST/RMF-aligned control thinking</li>
+            <li>• Documentation and audit traceability</li>
+          </ul>
+        </InfoCard>
+
+        <InfoCard title="ISSO / Cloud Governance Profile">
+          <div class="space-y-4">
+            <p>
+              PCB’s cloud security lane is grounded in operations: understanding how systems
+              fail, how incidents are escalated, how evidence is documented, and how controls
+              must remain measurable in real environments.
+            </p>
+
+            <p>
+              This track is designed for ISSO, cloud security support, RMF sustainment,
+              continuous monitoring, and cloud governance roles where technical operations
+              and risk management intersect.
+            </p>
+
+            <p>
+              Current positioning is strongest for cloud security governance and operational
+              assurance, with deeper architecture depth building through CCSP and AWS/Azure labs.
+            </p>
+          </div>
+        </InfoCard>
+      </div>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <InfoCard title="Representative Cloud / ISSO-Relevant Experience">
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-xl font-semibold text-cyan-300">
+              Continuous Monitoring & Evidence Discipline
+            </h3>
+            <p class="mt-2">
+              Supported monitoring workflows, escalation documentation, operational evidence,
+              and after-action reporting that map directly to cloud control assurance and
+              authorization sustainment.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-cyan-300">
+              Incident Response & Operational Risk
+            </h3>
+            <p class="mt-2">
+              Coordinated incident response activities in high-availability environments,
+              translating technical impact into risk-aware communication and corrective action.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold text-cyan-300">
+              Configuration, Remediation & Control Support
+            </h3>
+            <p class="mt-2">
+              Partnered with technical teams to track remediation, validate fixes, support
+              secure configuration expectations, and improve operational traceability.
+            </p>
+          </div>
+        </div>
+      </InfoCard>
+    </section>
+
+    <section class="mx-auto mt-12 max-w-5xl">
+      <div class="rounded-3xl border border-cyan-300/30 bg-slate-900 p-8">
+        <h2 class="text-2xl font-bold">
+          Best-Fit Role Targets
+        </h2>
+
+        <div class="mt-6 grid gap-4 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            ISSO / RMF Sustainment
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            Cloud Security Analyst
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            Cloud Governance / Assurance
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-950 p-5 text-slate-300">
+            Continuous Monitoring / Controls Support
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <CTAButton href="/resume/grc-risk" variant="secondary">
+            GRC / Risk Track
+          </CTAButton>
+
+          <CTAButton href="/case-studies">
+            View Case Studies
+          </CTAButton>
+        </div>
+      </div>
+    </section>
+
+    <div class="mx-auto mt-12 max-w-6xl px-6 pb-4 text-center">
+      <CTAButton href="#top" variant="secondary">
+        Back to Top ↑
+      </CTAButton>
+    </div>
+  </main>
+</BaseLayout>
