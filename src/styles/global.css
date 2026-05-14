@@ -4,3 +4,23 @@
 html {
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
