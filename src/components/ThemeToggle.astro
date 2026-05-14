@@ -1,0 +1,28 @@
+<button
+  id="theme-toggle"
+  class="rounded-lg border border-slate-700 px-3 py-2 text-sm font-semibold text-slate-300 transition hover:border-cyan-300 hover:text-cyan-300"
+  aria-label="Toggle theme"
+>
+  Theme
+</button>
+
+<script>
+  const button = document.getElementById("theme-toggle");
+  const root = document.documentElement;
+
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "light") {
+    root.classList.add("light");
+  }
+
+  button?.addEventListener("click", () => {
+    root.classList.toggle("light");
+
+    if (root.classList.contains("light")) {
+      localStorage.setItem("theme", "light");
+    } else {
+      localStorage.setItem("theme", "dark");
+    }
+  });
+</script>
