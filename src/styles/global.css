@@ -68,3 +68,29 @@ html.light .border-slate-800 {
 html.light .border-slate-700 {
   border-color: #94a3b8;
 }
+
+.bg-mission-cyber {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.16), transparent 32%),
+    radial-gradient(circle at top right, rgba(139, 92, 246, 0.14), transparent 30%),
+    linear-gradient(135deg, #020617 0%, #0f172a 45%, #111827 100%);
+}
+
+.bg-corporate-security {
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 28%),
+    linear-gradient(135deg, #020617 0%, #111827 55%, #1e293b 100%);
+}
+
+.bg-cloud-infra {
+  background:
+    radial-gradient(circle at top right, rgba(125, 211, 252, 0.18), transparent 30%),
+    linear-gradient(135deg, #061826 0%, #082f49 45%, #0f172a 100%);
+}
+
+.bg-aviation-ops {
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(245, 158, 11, 0.10), transparent 25%),
+    linear-gradient(135deg, #020617 0%, #0b1120 45%, #111827 100%);
+}
